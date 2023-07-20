@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000814;
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 1rem;
+}
+
+.wrap .start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000814;
+    border: 1px solid #ebf2fa;
+}
+
+.wrap .start-screen h1 {
+    font-size: 2rem;
+    color: #ebf2fa;
+}
+
+.wrap .start-screen p {
+    font-size: 1.5rem;
+    color: #ebf2fa;
+}
+
+.wrap .start-screen .pets {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrap .start-screen img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.wrap .start-screen img.selected {
+    transform: translate(0px, -20px);
+}
+
+.wrap .start-screen img:hover {
+    transform: translate(0px, -20px);
+}
+
+.wrap .start-screen button {
+    background-color: #ebf2fa;
+    border: none;
+    padding: 0.4rem 0.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #ebf2fa;
+}
+
+.wrap .start-screen button:active {
+    color: #ebf2fa;
+    background-color: #000814;
+    border-color: #ebf2fa;
+}
+
+.wrap .game-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ebf2fa;
+    display: none;
+}
+
+.wrap .game-screen .pet-img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.wrap .game-screen .status {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.wrap .game-screen p,
+.wrap .game-screen .status p {
+    color: #ebf2fa;
+    font-size: 1.2rem;
+}
+
+.wrap .game-screen .options {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.wrap .game-screen .options button {
+    background-color: #ebf2fa;
+    border: none;
+    padding: 0.4rem 0.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #ebf2fa;
+}
+
+.wrap .game-screen .options button:active {
+    color: #ebf2fa;
+    background-color: #000814;
+    border-color: #ebf2fa;
+}
+
+.end-game-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000814;
+    width: 40rem;
+    height: 20rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 2;
+    border-radius: 20px;
+    border: 5px solid #ebf2fa;
+    z-index: 1000;
+    display: none;
+}
+
+.end-game-screen p {
+    color: #ebf2fa;
+    font-size: 1.5rem;
+}
+
+.end-game-screen .restart-btn {
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.end-game-screen .restart-btn:active {
+    color: #ebf2fa;
+    background-color: #000814;
+    border-color: #ebf2fa;
+}
